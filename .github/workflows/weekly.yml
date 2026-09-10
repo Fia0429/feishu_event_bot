@@ -2,6 +2,9 @@ name: Weekly merchant opportunities
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/test-weekly-trigger"
   schedule:
     - cron: "30 10 * * 1"
       timezone: "Asia/Shanghai"
