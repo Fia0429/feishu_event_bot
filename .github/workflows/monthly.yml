@@ -1,0 +1,26 @@
+name: Monthly marketing calendar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 10 1 * *"
+      timezone: "Asia/Shanghai"
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate card
+        run: python bot.py monthly --preview > /dev/null
+      - name: Send monthly card
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: python bot.py monthly
