@@ -9,7 +9,8 @@ import os
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime
+from collections import Counter
+from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -23,8 +24,29 @@ def load_json(path: Path):
         return json.load(handle)
 
 
+def validate_weekly_merchants(merchants: list[dict], now: datetime) -> None:
+    if len(merchants) != 10:
+        raise ValueError("Weekly recommendation must contain exactly 10 merchants.")
+
+    categories = Counter(item["category"] for item in merchants)
+    if categories and max(categories.values()) > 8:
+        raise ValueError(f"One level-1 category exceeds the 80% cap: {categories}")
+
+    brands = [item["brand_key"].strip().casefold() for item in merchants]
+    if len(brands) != len(set(brands)):
+        raise ValueError("Duplicate brand detected in weekly recommendation.")
+
+    for item in merchants:
+        if not item.get("source_url", "").startswith(("https://", "http://")):
+            raise ValueError(f"Missing evidence URL for {item['name']}.")
+        evidence_date = date.fromisoformat(item["evidence_date"])
+        if (now.date() - evidence_date).days > 45:
+            raise ValueError(f"Evidence is stale for {item['name']}.")
+
+
 def weekly_card(now: datetime) -> dict:
     merchants = load_json(ROOT / "data" / "weekly_top10.json")
+    validate_weekly_merchants(merchants, now)
     elements = [
         {
             "tag": "markdown",
@@ -39,6 +61,7 @@ def weekly_card(now: datetime) -> dict:
         content = (
             f"**#{merchant['rank']}  {merchant['name']}｜{merchant['score']}/100**\n"
             f"商家ID：{merchant['merchant_id']}　｜　所属联盟：{merchant['affiliate']}　｜　"
+            f"一级类目：{merchant['category']}　｜　"
             f"信息信号：{merchant['info_score']}/90　｜　"
             f"网站模块：{merchant['website_score']}/10\n"
             f"**官网表现：** {merchant['website_metric']}\n"
