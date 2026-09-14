@@ -9,10 +9,28 @@
     "website_metric": "lenovo.com｜自然搜索约1,807万/月 5/5｜电脑硬件 #5 5/5",
     "reason": "Lenovo 在 IFA 2026 集中更新 Yoga、IdeaPad、IdeaCentre 及商用 AI 设备，形成覆盖个人消费、返校学习和企业办公的完整新品组合。当前处于返校季尾段及秋季办公设备换新窗口，新品密度、销售季需求与品牌官网承接能力同时成立。本周建议优先制作“AI PC选购”“学生/办公笔记本对比”和新品首发内容。",
     "source_url": "https://news.lenovo.com/press-kits/innovation-world-2026/",
-    "affiliate": "Flexoffers"
+    "affiliate": "Flexoffers",
+    "category": "家用电器和智能设备",
+    "brand_key": "lenovo",
+    "evidence_date": "2026-09-14"
   },
   {
     "rank": 2,
+    "name": "HOKA",
+    "merchant_id": "111621",
+    "score": 93,
+    "info_score": 84,
+    "website_score": 9,
+    "website_metric": "hoka.com｜自然搜索约426万/月 4/5｜跑步品类 #1 5/5",
+    "reason": "HOKA 官网当前集中展示 2026 新款跑鞋，并设置 Marathon Collection 专区，正好衔接柏林、芝加哥、纽约等秋季马拉松赛季的装备决策窗口。新品覆盖公路跑、越野、徒步和日常步行，多场景内容空间充足；官网自然搜索承接强，且在美国跑步网站中排名第1。建议优先制作秋季马拉松备赛、不同配速跑鞋选择及新品横评内容。",
+    "source_url": "https://www.hoka.com/en/dz/new-arrivals/",
+    "affiliate": "Rakuten",
+    "category": "运动健康",
+    "brand_key": "hoka",
+    "evidence_date": "2026-09-14"
+  },
+  {
+    "rank": 3,
     "name": "Govee",
     "merchant_id": "356326",
     "score": 90,
@@ -21,10 +39,13 @@
     "website_metric": "govee.com｜自然搜索约82万/月 2/5｜消费电子 #53 3/5",
     "reason": "Govee 在 IFA 2026 发布 Sky Ceiling Light、COB Strip Light 2/Pro 和 Permanent Outdoor Lights 2 Pro，部分产品已于9月4日至7日陆续开售。新品同时覆盖室内氛围照明和户外常设灯，正好衔接秋季家居焕新、万圣节及年末节庆布置的提前决策期。建议布局新品测评、房间改造和节庆灯光方案。",
     "source_url": "https://us.govee.com/blogs/news/govee-ifa-2026-news",
-    "affiliate": "Adpump"
+    "affiliate": "Adpump",
+    "category": "家用电器和智能设备",
+    "brand_key": "govee",
+    "evidence_date": "2026-09-14"
   },
   {
-    "rank": 3,
+    "rank": 4,
     "name": "Razer",
     "merchant_id": "385156",
     "score": 90,
@@ -33,10 +54,13 @@
     "website_metric": "razer.com｜自然搜索约400万/月 4/5｜游戏配件 #156 2/5",
     "reason": "Razer 9月上旬连续推出 Reclusa X Mini、Clio X、Sentinels 联名键盘及 Prio 控制器，新品节奏明显高于常态，覆盖键盘、音频和主机配件多个消费入口。随着秋季游戏新品与电竞关注度升温，用户对桌搭升级和外设对比的需求增强。建议重点投放新品开箱、电竞桌搭及礼品清单内容。",
     "source_url": "https://www.razer.com/newsroom/product-news",
-    "affiliate": "InvolveAsia-Y"
+    "affiliate": "InvolveAsia-Y",
+    "category": "家用电器和智能设备",
+    "brand_key": "razer",
+    "evidence_date": "2026-09-14"
   },
   {
-    "rank": 4,
+    "rank": 5,
     "name": "Dyson",
     "merchant_id": "111617",
     "score": 89,
@@ -45,10 +69,28 @@
     "website_metric": "dyson.com｜自然搜索约113万/月 3/5｜消费电子 #25 4/5",
     "reason": "Dyson 于9月3日发布新一代 R1 Nurovis 与 R2 Nurovis 机器人清洁产品，带来明确的新品传播节点。进入秋季后，深度清洁、宠物掉毛和年末家居换新内容将逐步升温；Dyson 较强的品牌搜索与品类排名也有利于承接高意向流量。建议主推机器人清洁对比、家庭清洁方案与高端家电换新内容。",
     "source_url": "https://www.dyson.com/discover/news/latest/introducing-r1-nurovi-r2-nurovi",
-    "affiliate": "Rakuten"
+    "affiliate": "Rakuten",
+    "category": "家用电器和智能设备",
+    "brand_key": "dyson",
+    "evidence_date": "2026-09-14"
   },
   {
-    "rank": 5,
+    "rank": 6,
+    "name": "Mango Outlet EU",
+    "merchant_id": "213546",
+    "score": 88,
+    "info_score": 83,
+    "website_score": 5,
+    "website_metric": "mangooutlet.com｜自然搜索占比未公开 0/5｜时尚服饰 #17 5/5",
+    "reason": "Mango Outlet 当前设有女装 70% 以上折扣专区，并以西装外套、长裤、针织与季节性外套等商品承接秋季返工和换季需求。折扣强度明确、可推广SKU丰富，适合在气温转凉及职场衣橱焕新窗口集中曝光。虽然公开页未披露自然搜索渠道占比，但官网在西班牙时尚服饰品类排名第17。建议主推秋季通勤搭配、低价胶囊衣橱和高折扣单品清单。",
+    "source_url": "https://www.mangooutlet.com/us/en/c/women/more-than-70/67980598",
+    "affiliate": "Rakuten",
+    "category": "时尚服饰",
+    "brand_key": "mango-outlet",
+    "evidence_date": "2026-09-14"
+  },
+  {
+    "rank": 7,
     "name": "Roborock",
     "merchant_id": "263126",
     "score": 85,
@@ -57,22 +99,13 @@
     "website_metric": "roborock.com｜自然搜索约143万/月 3/5｜科技其他 #476 2/5",
     "reason": "Roborock 在 IFA 2026 展示从室内地面清洁延伸至泳池等场景的完整清洁生态，具备多产品联动推广空间。秋季家居整理和年末大促预热会推动扫地机器人、洗地设备的比较与升级需求。建议以“全屋自动清洁”“扫拖产品横评”和家庭场景组合购为主要内容方向。",
     "source_url": "https://ifa.vporoom.com/2026-09-03-Roborock-Redefines-Human-Centered-Cleaning-at-IFA-2026-Unveiling-a-Comprehensive-Ecosystem-from-the-Living-Room-to-the-Pool",
-    "affiliate": "WebgainsY"
+    "affiliate": "WebgainsY",
+    "category": "家用电器和智能设备",
+    "brand_key": "roborock",
+    "evidence_date": "2026-09-14"
   },
   {
-    "rank": 6,
-    "name": "Jackery",
-    "merchant_id": "213902",
-    "score": 84,
-    "info_score": 79,
-    "website_score": 5,
-    "website_metric": "jackery.com｜自然搜索约46万/月 2/5｜消费电子 #66 3/5",
-    "reason": "Jackery 在 IFA 2026 推出 Explorer Plus V2 系列，覆盖便携储能、家庭备用电源和户外用电需求。北美飓风季、秋季露营及房车出行形成多个可转化场景，新品又提供了明确的信息入口。建议制作停电应急配置、露营电源容量选择和同级产品对比内容。",
-    "source_url": "https://uk.jackery.com/blogs/news/ifa-2026-jackery-explorer-plus-v2-series",
-    "affiliate": "Impact"
-  },
-  {
-    "rank": 7,
+    "rank": 8,
     "name": "EcoFlow",
     "merchant_id": "256663",
     "score": 84,
@@ -81,10 +114,28 @@
     "website_metric": "ecoflow.com｜自然约178万/月 3/5｜消费电子 #47 4/5",
     "reason": "EcoFlow 在 IFA 2026 发布 RIVER Gen 4 与 PowerRock 4000，分别切入便携电源和房车/离网能源场景。其官网自然搜索承接和品类排名相对突出，加上秋季户外出行与家庭应急需求，具备“新品+季节+官网基础”的多信号共振。建议重点覆盖容量选购、房车能源和家庭备电方案。",
     "source_url": "https://www.prnewswire.com/news-releases/breaking-boundaries-ecoflow-unveils-river-gen4-and-powerrock-4000-at-ifa-2026-302869915.html",
-    "affiliate": "Awin_convergexperts"
+    "affiliate": "Awin_convergexperts",
+    "category": "家用电器和智能设备",
+    "brand_key": "ecoflow",
+    "evidence_date": "2026-09-14"
   },
   {
-    "rank": 8,
+    "rank": 9,
+    "name": "Jackery",
+    "merchant_id": "213902",
+    "score": 84,
+    "info_score": 79,
+    "website_score": 5,
+    "website_metric": "jackery.com｜自然搜索约46万/月 2/5｜消费电子 #66 3/5",
+    "reason": "Jackery 在 IFA 2026 推出 Explorer Plus V2 系列，覆盖便携储能、家庭备用电源和户外用电需求。北美飓风季、秋季露营及房车出行形成多个可转化场景，新品又提供了明确的信息入口。建议制作停电应急配置、露营电源容量选择和同级产品对比内容。",
+    "source_url": "https://uk.jackery.com/blogs/news/ifa-2026-jackery-explorer-plus-v2-series",
+    "affiliate": "Impact",
+    "category": "家用电器和智能设备",
+    "brand_key": "jackery",
+    "evidence_date": "2026-09-14"
+  },
+  {
+    "rank": 10,
     "name": "Dreame",
     "merchant_id": "371497",
     "score": 81,
@@ -93,30 +144,9 @@
     "website_metric": "dreametech.com｜自然搜索约134万/月 3/5｜商业服务 #254 2/5",
     "reason": "Dreame 在 IFA 2026 集中展示机器人吸尘器、洗地机、割草机器人及个护等智能生活新品，适合进行跨品类内容联动。秋季家居清洁和智能设备换新需求临近，但公开页品类归类偏宽，因此网站排名只作为弱参考。建议围绕新品功能对比、智能清洁生态和家庭自动化场景推广。",
     "source_url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html",
-    "affiliate": "Partnermatic"
-  },
-  {
-    "rank": 9,
-    "name": "Philips Hue",
-    "merchant_id": "205930",
-    "score": 78,
-    "info_score": 74,
-    "website_score": 4,
-    "website_metric": "philips-hue.com｜自然搜索约97万/月 2/5｜家居其他 #178 2/5",
-    "reason": "Philips Hue 于9月3日发布围绕 AI、沉浸式娱乐与设计的新一轮智能照明更新。秋季室内活动增加，且万圣节、感恩节和圣诞季的氛围布置即将进入准备阶段，智能灯光具备较长内容预热周期。建议提前布局游戏影音灯光、节庆氛围和智能家居联动方案。",
-    "source_url": "https://www.signify.com/global/our-company/news/press-releases/2026/20260903-philips-hue-expands-on-smart-lighting-with-ai-immersive-entertainment-and-design",
-    "affiliate": "TradeDoubler"
-  },
-  {
-    "rank": 10,
-    "name": "xTool",
-    "merchant_id": "375148",
-    "score": 77,
-    "info_score": 73,
-    "website_score": 4,
-    "website_metric": "xtool.com｜自然搜索占比未披露 0/5｜电脑硬件 #18 4/5",
-    "reason": "xTool 在 IFA 2026 强调面向新一代创作者的数字制造工具，覆盖激光雕刻、打印和个性化生产场景。随着年末礼品定制及小商家节日备货提前启动，创作设备具备季节性内容机会；其品类排名较强，但公开页未披露自然搜索占比，因此该项不加分。建议主推礼品定制、副业创业和设备回本测算内容。",
-    "source_url": "https://www.prnewswire.co.uk/news-releases/xtool-brings-the-human-age-of-making-to-ifa-2026-empowering-a-new-generation-of-creators-302870054.html",
-    "affiliate": "Partnermatic"
+    "affiliate": "Partnermatic",
+    "category": "家用电器和智能设备",
+    "brand_key": "dreame",
+    "evidence_date": "2026-09-14"
   }
 ]
