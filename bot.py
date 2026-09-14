@@ -38,7 +38,8 @@ def weekly_card(now: datetime) -> dict:
     for index, merchant in enumerate(merchants):
         content = (
             f"**#{merchant['rank']}  {merchant['name']}｜{merchant['score']}/100**\n"
-            f"商家ID：{merchant['merchant_id']}　｜　信息信号：{merchant['info_score']}/90　｜　"
+            f"商家ID：{merchant['merchant_id']}　｜　所属联盟：{merchant['affiliate']}　｜　"
+            f"信息信号：{merchant['info_score']}/90　｜　"
             f"网站模块：{merchant['website_score']}/10\n"
             f"**官网表现：** {merchant['website_metric']}\n"
             f"**推荐理由：** {merchant['reason']}\n"
