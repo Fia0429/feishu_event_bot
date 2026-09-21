@@ -1,15 +1,405 @@
 [
-  {"month":1,"date":"1月1日及月初","name":"New Year / 冬季清仓","markets":"全球","categories":"时尚服饰、家居生活、家电、美妆","merchants":[{"id":"113881","name":"Lenovo"},{"id":"111617","name":"Dyson"}]},
-  {"month":2,"date":"2月14日","name":"Valentine's Day","markets":"全球重点消费市场","categories":"美妆、礼品、时尚、珠宝、餐饮","merchants":[{"id":"205930","name":"Philips Hue"},{"id":"356326","name":"Govee"}]},
-  {"month":3,"date":"3月8日及春季","name":"International Women's Day / 春季焕新","markets":"欧洲、亚洲及全球重点市场","categories":"美妆、时尚、家居、运动健康","merchants":[{"id":"111617","name":"Dyson"},{"id":"371497","name":"Dreame"}]},
-  {"month":4,"date":"4月22日","name":"Earth Day / 春季户外季","markets":"北美、欧洲、澳洲","categories":"户外、储能、旅行、可持续生活","merchants":[{"id":"213902","name":"Jackery"},{"id":"256663","name":"EcoFlow"}]},
-  {"month":5,"date":"5月第二个星期日","name":"Mother's Day","markets":"北美、欧洲、澳洲及亚洲部分市场","categories":"美妆、个护、家居、礼品","merchants":[{"id":"111617","name":"Dyson"},{"id":"205930","name":"Philips Hue"}]},
-  {"month":6,"date":"6月第三个星期日及毕业季","name":"Father's Day / Graduation Season","markets":"北美、欧洲及全球毕业市场","categories":"数码、工具、户外、时尚礼品","merchants":[{"id":"113881","name":"Lenovo"},{"id":"385156","name":"Razer"},{"id":"375148","name":"xTool"}]},
-  {"month":7,"date":"7月上旬至中旬","name":"Independence Day / 夏季大促节点","markets":"美国及北半球重点市场","categories":"户外、旅行、家居、家电、时尚","merchants":[{"id":"213902","name":"Jackery"},{"id":"256663","name":"EcoFlow"},{"id":"356326","name":"Govee"}]},
-  {"month":8,"date":"8月全月","name":"Back to School","markets":"北美、欧洲及亚洲主要市场","categories":"电脑数码、服饰鞋包、宿舍家居、文具","merchants":[{"id":"113881","name":"Lenovo"},{"id":"385156","name":"Razer"},{"id":"205930","name":"Philips Hue"}]},
-  {"month":9,"date":"9月第一个星期一","name":"Labor Day","markets":"美国、加拿大","categories":"家电、家居、服饰、户外","merchants":[{"id":"111617","name":"Dyson"},{"id":"263126","name":"Roborock"},{"id":"371497","name":"Dreame"}]},
-  {"month":9,"date":"9月上旬","name":"IFA 新品季","markets":"欧洲及全球消费电子市场","categories":"家电、智能设备、电脑数码、储能","merchants":[{"id":"113881","name":"Lenovo"},{"id":"356326","name":"Govee"},{"id":"213902","name":"Jackery"},{"id":"256663","name":"EcoFlow"}]},
-  {"month":10,"date":"10月31日","name":"Halloween","markets":"北美、英国、欧洲部分市场","categories":"服饰、美妆、食品、派对用品、智能照明","merchants":[{"id":"356326","name":"Govee"},{"id":"205930","name":"Philips Hue"}]},
-  {"month":11,"date":"11月11日及感恩节后","name":"Singles' Day / Black Friday / Cyber Monday","markets":"全球","categories":"全品类，重点关注家电、数码、时尚、美妆","merchants":[{"id":"113881","name":"Lenovo"},{"id":"111617","name":"Dyson"},{"id":"385156","name":"Razer"},{"id":"263126","name":"Roborock"}]},
-  {"month":12,"date":"12月全月","name":"Christmas / Boxing Day / 年末清仓","markets":"全球重点消费市场","categories":"礼品、时尚、家居、家电、美妆、食品","merchants":[{"id":"356326","name":"Govee"},{"id":"205930","name":"Philips Hue"},{"id":"375148","name":"xTool"}]}
+  {
+    "month": 1,
+    "date": "1月1日及月初",
+    "name": "New Year / 冬季清仓",
+    "markets": "全球",
+    "categories": "时尚服饰、家居生活、家电、美妆",
+    "merchants": [
+      {
+        "id": "113881",
+        "name": "Lenovo"
+      },
+      {
+        "id": "111617",
+        "name": "Dyson"
+      }
+    ]
+  },
+  {
+    "month": 2,
+    "date": "2月14日",
+    "name": "Valentine's Day",
+    "markets": "全球重点消费市场",
+    "categories": "美妆、礼品、时尚、珠宝、餐饮",
+    "merchants": [
+      {
+        "id": "205930",
+        "name": "Philips Hue"
+      },
+      {
+        "id": "356326",
+        "name": "Govee"
+      }
+    ]
+  },
+  {
+    "month": 3,
+    "date": "3月8日及春季",
+    "name": "International Women's Day / 春季焕新",
+    "markets": "欧洲、亚洲及全球重点市场",
+    "categories": "美妆、时尚、家居、运动健康",
+    "merchants": [
+      {
+        "id": "111617",
+        "name": "Dyson"
+      },
+      {
+        "id": "371497",
+        "name": "Dreame"
+      }
+    ]
+  },
+  {
+    "month": 4,
+    "date": "4月22日",
+    "name": "Earth Day / 春季户外季",
+    "markets": "北美、欧洲、澳洲",
+    "categories": "户外、储能、旅行、可持续生活",
+    "merchants": [
+      {
+        "id": "213902",
+        "name": "Jackery"
+      },
+      {
+        "id": "256663",
+        "name": "EcoFlow"
+      }
+    ]
+  },
+  {
+    "month": 5,
+    "date": "5月第二个星期日",
+    "name": "Mother's Day",
+    "markets": "北美、欧洲、澳洲及亚洲部分市场",
+    "categories": "美妆、个护、家居、礼品",
+    "merchants": [
+      {
+        "id": "111617",
+        "name": "Dyson"
+      },
+      {
+        "id": "205930",
+        "name": "Philips Hue"
+      }
+    ]
+  },
+  {
+    "month": 6,
+    "date": "6月第三个星期日及毕业季",
+    "name": "Father's Day / Graduation Season",
+    "markets": "北美、欧洲及全球毕业市场",
+    "categories": "数码、工具、户外、时尚礼品",
+    "merchants": [
+      {
+        "id": "113881",
+        "name": "Lenovo"
+      },
+      {
+        "id": "385156",
+        "name": "Razer"
+      },
+      {
+        "id": "375148",
+        "name": "xTool"
+      }
+    ]
+  },
+  {
+    "month": 7,
+    "date": "7月上旬至中旬",
+    "name": "Independence Day / 夏季大促节点",
+    "markets": "美国及北半球重点市场",
+    "categories": "户外、旅行、家居、家电、时尚",
+    "merchants": [
+      {
+        "id": "213902",
+        "name": "Jackery"
+      },
+      {
+        "id": "256663",
+        "name": "EcoFlow"
+      },
+      {
+        "id": "356326",
+        "name": "Govee"
+      }
+    ]
+  },
+  {
+    "month": 8,
+    "date": "8月全月",
+    "name": "Back to School",
+    "markets": "北美、欧洲及亚洲主要市场",
+    "categories": "电脑数码、服饰鞋包、宿舍家居、文具",
+    "merchants": [
+      {
+        "id": "113881",
+        "name": "Lenovo"
+      },
+      {
+        "id": "385156",
+        "name": "Razer"
+      },
+      {
+        "id": "205930",
+        "name": "Philips Hue"
+      }
+    ]
+  },
+  {
+    "month": 9,
+    "date": "9月第一个星期一",
+    "name": "Labor Day",
+    "markets": "美国、加拿大",
+    "categories": "家电、家居、服饰、户外",
+    "merchants": [
+      {
+        "id": "111617",
+        "name": "Dyson"
+      },
+      {
+        "id": "263126",
+        "name": "Roborock"
+      },
+      {
+        "id": "371497",
+        "name": "Dreame"
+      }
+    ]
+  },
+  {
+    "month": 9,
+    "date": "9月上旬",
+    "name": "IFA 新品季",
+    "markets": "欧洲及全球消费电子市场",
+    "categories": "家电、智能设备、电脑数码、储能",
+    "merchants": [
+      {
+        "id": "113881",
+        "name": "Lenovo"
+      },
+      {
+        "id": "356326",
+        "name": "Govee"
+      },
+      {
+        "id": "213902",
+        "name": "Jackery"
+      },
+      {
+        "id": "256663",
+        "name": "EcoFlow"
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "date": "10月1日–7日",
+    "name": "中国国庆黄金周 / Golden Week",
+    "markets": "中国出境游目的地、东南亚、日韩、欧洲及澳洲",
+    "categories": "航空出行、酒店、旅行预订、箱包、户外用品",
+    "merchants": [
+      {
+        "id": "385214",
+        "name": "Airpaz Global"
+      },
+      {
+        "id": "385227",
+        "name": "Traveloka TH"
+      },
+      {
+        "id": "265100",
+        "name": "Traveloka Australia"
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "date": "10月1日–4日",
+    "name": "Oktoberfest 收官阶段",
+    "markets": "德国、欧洲及全球啤酒节相关市场",
+    "categories": "旅游出行、食品饮品、传统服饰、聚会用品",
+    "merchants": [
+      {
+        "id": "385214",
+        "name": "Airpaz Global"
+      },
+      {
+        "id": "385227",
+        "name": "Traveloka TH"
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "date": "10月5日–11日",
+    "name": "秋季平台大促周 / Prime Big Deal Days",
+    "markets": "美国、加拿大、英国、欧洲、日本、澳洲等重点市场",
+    "categories": "家电数码、家居、时尚、美妆、玩具、日用品及早期礼赠",
+    "merchants": [
+      {
+        "id": "378621",
+        "name": "Walmart US"
+      },
+      {
+        "id": "113881",
+        "name": "Lenovo USA"
+      },
+      {
+        "id": "111617",
+        "name": "Dyson"
+      },
+      {
+        "id": "148833",
+        "name": "Stanley"
+      },
+      {
+        "id": "112887",
+        "name": "Charlotte Tilbury US"
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "date": "10月11日及全月秋季赛事",
+    "name": "Chicago Marathon / 秋季路跑季",
+    "markets": "美国、欧洲、日本及全球跑步市场",
+    "categories": "跑鞋、运动服饰、能量补给、营养保健、运动配件",
+    "merchants": [
+      {
+        "id": "111621",
+        "name": "Hoka US"
+      },
+      {
+        "id": "358478",
+        "name": "Honey Stinger"
+      },
+      {
+        "id": "111335",
+        "name": "iHerb"
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "date": "10月12日",
+    "name": "Canadian Thanksgiving",
+    "markets": "加拿大",
+    "categories": "家居餐厨、食品饮品、节庆装饰、照明、礼赠",
+    "merchants": [
+      {
+        "id": "111261",
+        "name": "Walmart CA"
+      },
+      {
+        "id": "152027",
+        "name": "Philips Hue CA"
+      },
+      {
+        "id": "381266",
+        "name": "Portmeirion US"
+      },
+      {
+        "id": "148833",
+        "name": "Stanley"
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "date": "10月全月，重点10月中下旬",
+    "name": "Halloween 预热与10月31日节点",
+    "markets": "北美、英国、欧洲、澳洲及部分亚洲市场",
+    "categories": "服饰装扮、美妆、糖果食品、派对用品、家居装饰、智能照明",
+    "merchants": [
+      {
+        "id": "151177",
+        "name": "Milanoo DE"
+      },
+      {
+        "id": "356326",
+        "name": "Govee"
+      },
+      {
+        "id": "205930",
+        "name": "Philips Hue US"
+      },
+      {
+        "id": "112887",
+        "name": "Charlotte Tilbury US"
+      }
+    ]
+  },
+  {
+    "month": 10,
+    "date": "10月中下旬",
+    "name": "Holiday Shopping / 圣诞礼赠预热",
+    "markets": "北美、欧洲、英国、澳洲及全球跨境市场",
+    "categories": "圣诞装饰、礼品、美妆礼盒、家居用品、时尚服饰",
+    "merchants": [
+      {
+        "id": "371588",
+        "name": "Käthe Wohlfahrt DE"
+      },
+      {
+        "id": "359541",
+        "name": "Charlotte Tilbury"
+      },
+      {
+        "id": "148833",
+        "name": "Stanley"
+      },
+      {
+        "id": "378621",
+        "name": "Walmart US"
+      }
+    ]
+  },
+  {
+    "month": 11,
+    "date": "11月11日及感恩节后",
+    "name": "Singles' Day / Black Friday / Cyber Monday",
+    "markets": "全球",
+    "categories": "全品类，重点关注家电、数码、时尚、美妆",
+    "merchants": [
+      {
+        "id": "113881",
+        "name": "Lenovo"
+      },
+      {
+        "id": "111617",
+        "name": "Dyson"
+      },
+      {
+        "id": "385156",
+        "name": "Razer"
+      },
+      {
+        "id": "263126",
+        "name": "Roborock"
+      }
+    ]
+  },
+  {
+    "month": 12,
+    "date": "12月全月",
+    "name": "Christmas / Boxing Day / 年末清仓",
+    "markets": "全球重点消费市场",
+    "categories": "礼品、时尚、家居、家电、美妆、食品",
+    "merchants": [
+      {
+        "id": "356326",
+        "name": "Govee"
+      },
+      {
+        "id": "205930",
+        "name": "Philips Hue"
+      },
+      {
+        "id": "375148",
+        "name": "xTool"
+      }
+    ]
+  }
 ]
