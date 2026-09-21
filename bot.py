@@ -144,8 +144,13 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("card", choices=("weekly", "monthly"))
     parser.add_argument("--preview", action="store_true", help="Print JSON without sending")
+    parser.add_argument("--month", type=int, help="Override month for an early monthly-card send")
     args = parser.parse_args()
     now = datetime.now(BEIJING)
+    if args.month is not None:
+        if args.card != "monthly" or not 1 <= args.month <= 12:
+            parser.error("--month is only valid for monthly cards and must be 1-12")
+        now = now.replace(month=args.month, day=1)
     card = weekly_card(now) if args.card == "weekly" else monthly_card(now)
     if args.preview:
         print(json.dumps(card, ensure_ascii=False, indent=2))
