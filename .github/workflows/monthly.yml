@@ -2,6 +2,9 @@ name: Monthly marketing calendar
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/test-monthly-trigger"
   schedule:
     # 02:30 UTC = 10:30 Asia/Shanghai
     - cron: "30 2 1 * *"
@@ -19,8 +22,18 @@ jobs:
         with:
           python-version: "3.12"
       - name: Validate card
-        run: python bot.py monthly --preview > /dev/null
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python bot.py monthly --month 10 --preview > /dev/null
+          else
+            python bot.py monthly --preview > /dev/null
+          fi
       - name: Send monthly card
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
-        run: python bot.py monthly
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python bot.py monthly --month 10
+          else
+            python bot.py monthly
+          fi
