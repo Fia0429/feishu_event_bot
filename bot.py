@@ -27,15 +27,12 @@ def load_json(path: Path):
 def validate_weekly_merchants(merchants: list[dict], now: datetime) -> None:
     if len(merchants) != 10:
         raise ValueError("Weekly recommendation must contain exactly 10 merchants.")
-
     categories = Counter(item["category"] for item in merchants)
     if categories and max(categories.values()) > 8:
         raise ValueError(f"One level-1 category exceeds the 80% cap: {categories}")
-
     brands = [item["brand_key"].strip().casefold() for item in merchants]
     if len(brands) != len(set(brands)):
         raise ValueError("Duplicate brand detected in weekly recommendation.")
-
     for item in merchants:
         if not item.get("source_url", "").startswith(("https://", "http://")):
             raise ValueError(f"Missing evidence URL for {item['name']}.")
@@ -45,7 +42,14 @@ def validate_weekly_merchants(merchants: list[dict], now: datetime) -> None:
 
 
 def weekly_card(now: datetime) -> dict:
-    merchants = load_json(ROOT / "data" / "weekly_top10.json")
+    weekly = load_json(ROOT / "data" / "weekly_top10.json")
+    week_start = date.fromisoformat(weekly["week_start"])
+    week_end = date.fromisoformat(weekly["week_end"])
+    if not week_start <= now.date() <= week_end:
+        raise ValueError(
+            f"Weekly data is stale: {week_start}–{week_end}; today is {now.date()}."
+        )
+    merchants = weekly["merchants"]
     validate_weekly_merchants(merchants, now)
     elements = [
         {
@@ -77,7 +81,10 @@ def weekly_card(now: datetime) -> dict:
             "template": "orange",
             "title": {
                 "tag": "plain_text",
-                "content": f"海外商家机会 TOP10｜Ver 1.0（{now:%Y.%m.%d}）",
+                "content": (
+                    "海外商家机会 TOP10｜Ver 1.0（"
+                    f"{week_start.month}.{week_start.day}–{week_end.month}.{week_end.day}）"
+                ),
             },
         },
         "elements": elements,
@@ -144,13 +151,8 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("card", choices=("weekly", "monthly"))
     parser.add_argument("--preview", action="store_true", help="Print JSON without sending")
-    parser.add_argument("--month", type=int, help="Override month for an early monthly-card send")
     args = parser.parse_args()
     now = datetime.now(BEIJING)
-    if args.month is not None:
-        if args.card != "monthly" or not 1 <= args.month <= 12:
-            parser.error("--month is only valid for monthly cards and must be 1-12")
-        now = now.replace(month=args.month, day=1)
     card = weekly_card(now) if args.card == "weekly" else monthly_card(now)
     if args.preview:
         print(json.dumps(card, ensure_ascii=False, indent=2))
