@@ -2,12 +2,10 @@ name: Weekly merchant opportunities
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - ".github/test-weekly-trigger"
   schedule:
-    # 02:30 UTC = 10:30 Asia/Shanghai
-    - cron: "30 2 * * 1"
+    # 02:00 UTC = 10:00 Asia/Shanghai. Queue 30 minutes early to absorb
+    # ordinary GitHub Actions schedule delays and target delivery by 10:30.
+    - cron: "0 2 * * 1"
 
 permissions:
   contents: read
