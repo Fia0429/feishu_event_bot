@@ -7,6 +7,7 @@ import argparse
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 from collections import Counter
@@ -137,20 +138,28 @@ def monthly_card(now: datetime) -> dict:
 
 def send(webhook: str, card: dict) -> None:
     payload = json.dumps({"msg_type": "interactive", "card": card}, ensure_ascii=False).encode()
-    request = urllib.request.Request(
-        webhook,
-        data=payload,
-        headers={"Content-Type": "application/json; charset=utf-8"},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            body = json.loads(response.read().decode())
-    except (urllib.error.URLError, TimeoutError) as exc:
-        raise RuntimeError(f"Feishu request failed: {exc}") from exc
-    if body.get("code", body.get("StatusCode")) != 0:
-        raise RuntimeError(f"Feishu rejected the card: {body}")
-    print("Feishu card sent successfully.")
+    retry_delays = (0, 15, 30, 60)
+    for attempt, delay in enumerate(retry_delays, start=1):
+        if delay:
+            print(f"Feishu rate limited the request; retrying in {delay}s.")
+            time.sleep(delay)
+        request = urllib.request.Request(
+            webhook,
+            data=payload,
+            headers={"Content-Type": "application/json; charset=utf-8"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                body = json.loads(response.read().decode())
+        except (urllib.error.URLError, TimeoutError) as exc:
+            raise RuntimeError(f"Feishu request failed: {exc}") from exc
+        code = body.get("code", body.get("StatusCode"))
+        if code == 0:
+            print(f"Feishu card sent successfully on attempt {attempt}.")
+            return
+        if code != 11232 or attempt == len(retry_delays):
+            raise RuntimeError(f"Feishu rejected the card: {body}")
 
 
 def main() -> int:
