@@ -47,8 +47,8 @@ def validate_weekly_merchants(
             raise ValueError(f"Evidence is stale for {item['name']}.")
 
 
-def weekly_card(now: datetime) -> dict:
-    weekly = load_json(ROOT / "data" / "weekly_top10.json")
+def opportunity_card(now: datetime, data_file: str, title_prefix: str) -> dict:
+    weekly = load_json(ROOT / "data" / data_file)
     week_start = date.fromisoformat(weekly["week_start"])
     week_end = date.fromisoformat(weekly["week_end"])
     if not week_start <= now.date() <= week_end:
@@ -89,13 +89,21 @@ def weekly_card(now: datetime) -> dict:
             "title": {
                 "tag": "plain_text",
                 "content": (
-                    f"海外商家机会 TOP{len(merchants)}｜Ver 1.0（"
+                    f"{title_prefix} TOP{len(merchants)}｜Ver 1.0（"
                     f"{week_start.month}.{week_start.day}–{week_end.month}.{week_end.day}）"
                 ),
             },
         },
         "elements": elements,
     }
+
+
+def weekly_card(now: datetime) -> dict:
+    return opportunity_card(now, "weekly_top10.json", "海外商家机会")
+
+
+def linkbux_card(now: datetime) -> dict:
+    return opportunity_card(now, "linkbux_top10.json", "Linkbux 商家机会")
 
 
 def monthly_card(now: datetime) -> dict:
@@ -164,7 +172,7 @@ def send(webhook: str, card: dict) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("card", choices=("weekly", "monthly"))
+    parser.add_argument("card", choices=("weekly", "monthly", "linkbux"))
     parser.add_argument("--preview", action="store_true", help="Print JSON without sending")
     parser.add_argument("--month", type=int, help="Override month for an early monthly-card send")
     args = parser.parse_args()
@@ -173,7 +181,12 @@ def main() -> int:
         if args.card != "monthly" or not 1 <= args.month <= 12:
             parser.error("--month is only valid for monthly cards and must be 1-12")
         now = now.replace(month=args.month, day=1)
-    card = weekly_card(now) if args.card == "weekly" else monthly_card(now)
+    if args.card == "weekly":
+        card = weekly_card(now)
+    elif args.card == "linkbux":
+        card = linkbux_card(now)
+    else:
+        card = monthly_card(now)
     if args.preview:
         print(json.dumps(card, ensure_ascii=False, indent=2))
         return 0
