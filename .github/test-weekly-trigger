@@ -6,3 +6,4 @@ Setup test trigger.
 2026-09-28: resend Sep 28-Oct 4 after stale-data and schedule fixes.
 2026-09-28: final verified resend with weekly workflow trigger restored.
 2026-10-08: send Oct 1-8 weekly Top20 merchant opportunities.
+2026-10-08: retry Oct 1-8 Top20 after Feishu rate-limit fix.
