@@ -24,11 +24,16 @@ def load_json(path: Path):
         return json.load(handle)
 
 
-def validate_weekly_merchants(merchants: list[dict], now: datetime) -> None:
-    if len(merchants) != 10:
-        raise ValueError("Weekly recommendation must contain exactly 10 merchants.")
+def validate_weekly_merchants(
+    merchants: list[dict], now: datetime, expected_count: int
+) -> None:
+    if len(merchants) != expected_count:
+        raise ValueError(
+            f"Weekly recommendation must contain exactly {expected_count} merchants."
+        )
     categories = Counter(item["category"] for item in merchants)
-    if categories and max(categories.values()) > 8:
+    max_category_count = int(expected_count * 0.8)
+    if categories and max(categories.values()) > max_category_count:
         raise ValueError(f"One level-1 category exceeds the 80% cap: {categories}")
     brands = [item["brand_key"].strip().casefold() for item in merchants]
     if len(brands) != len(set(brands)):
@@ -50,7 +55,8 @@ def weekly_card(now: datetime) -> dict:
             f"Weekly data is stale: {week_start}–{week_end}; today is {now.date()}."
         )
     merchants = weekly["merchants"]
-    validate_weekly_merchants(merchants, now)
+    expected_count = weekly.get("expected_count", 10)
+    validate_weekly_merchants(merchants, now, expected_count)
     elements = [
         {
             "tag": "markdown",
@@ -82,7 +88,7 @@ def weekly_card(now: datetime) -> dict:
             "title": {
                 "tag": "plain_text",
                 "content": (
-                    "海外商家机会 TOP10｜Ver 1.0（"
+                    f"海外商家机会 TOP{len(merchants)}｜Ver 1.0（"
                     f"{week_start.month}.{week_start.day}–{week_end.month}.{week_end.day}）"
                 ),
             },
