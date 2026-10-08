@@ -1,0 +1,26 @@
+name: Linkbux merchant opportunities
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/test-linkbux-trigger"
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate card
+        run: python bot.py linkbux --preview > /dev/null
+      - name: Send Linkbux card
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: python bot.py linkbux
