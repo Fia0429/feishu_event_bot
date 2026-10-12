@@ -58,12 +58,8 @@ def category_for(name: str) -> str:
 
 
 def quality_score(m: dict) -> float:
-    order = max(0.0, min(1.0, float(m.get("order_valid_rate") or 0)))
-    commission = max(0.0, min(1.0, float(m.get("commission_valid_rate") or 0)))
-    revenue = max(0.0, float(m.get("sales") or 0))
     category = m.get("category") or category_for(m["name"])
-    category_weight = 10 if category in PRIMARY else 6 if category in SECONDARY else 0
-    return order * 12 + commission * 13 + min(15, math.log10(revenue + 1) * 2) + category_weight
+    return 15 if category in PRIMARY else 10 if category in SECONDARY else 4
 
 
 def fetch_news(name: str, days: int = 14) -> list[dict]:
@@ -116,7 +112,7 @@ def reason(name: str, category: str, signals: list[str], headline: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=20)
-    parser.add_argument("--shortlist", type=int, default=120)
+    parser.add_argument("--shortlist", type=int, default=2000)
     parser.add_argument("--delay", type=float, default=0.35)
     args = parser.parse_args()
 
