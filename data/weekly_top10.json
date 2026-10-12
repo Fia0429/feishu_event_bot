@@ -1,6 +1,6 @@
 {
-  "week_start": "2026-10-01",
-  "week_end": "2026-10-08",
+  "week_start": "2026-10-12",
+  "week_end": "2026-10-18",
   "expected_count": 20,
   "merchants": [
     {
@@ -11,12 +11,12 @@
       "info_score": 90,
       "website_score": 5,
       "website_metric": "walmart.com｜自然搜索占比未公开 0/5｜Marketplace 品类 #3 5/5",
-      "reason": "Walmart Fall Deals 已于10月5日启动并持续至10月11日，覆盖家居、电子、玩具、时尚和食品，正面承接 Amazon Prime Big Deal Days。活动正在进行且品类覆盖广，本周应优先发布实时折扣清单、价格对比和早期礼赠指南。",
+      "reason": "美国 Columbus Day/Indigenous Peoples’ Day 周末刚结束，消费者仍处于节后比价与补购窗口；同时万圣节、感恩节和年末礼赠需求开始衔接。Walmart 覆盖家居、电子、玩具、服饰和食品，本周适合发布万圣节到货清单、秋季家居补购及早期礼赠指南。",
       "source_url": "https://www.walmart.com/shop/deals/announce",
       "affiliate": "Shopnomix",
       "category": "集合折扣店",
       "brand_key": "walmart",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 2,
@@ -26,12 +26,12 @@
       "info_score": 85,
       "website_score": 8,
       "website_metric": "homedepot.com｜自然搜索规模高 4/5｜家居建材头部品类 4/5",
-      "reason": "Home Depot 2026 Holiday Decor 系列从10月5日起在全美门店铺开，同时万圣节巨型装饰仍处销售窗口，形成“新品上架＋万圣节临近＋圣诞预热”多信号。本周适合推广智能圣诞树、户外灯饰、万圣节大型摆件和提前布置清单。",
+      "reason": "Home Depot 2026 Holiday Decor 系列已在全美门店铺开，万圣节巨型装饰仍处核心销售窗口，形成“新品上架＋万圣节临近＋圣诞预热”多信号。本周适合推广户外灯饰、万圣节大型摆件、智能圣诞树和提前布置清单。",
       "source_url": "https://corporate.homedepot.com/news/products/home-depot-announces-2026-holiday-decor-collection",
       "affiliate": "rewardany",
       "category": "家居生活",
       "brand_key": "home-depot",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 3,
@@ -41,12 +41,12 @@
       "info_score": 87,
       "website_score": 5,
       "website_metric": "govee.com｜自然搜索约82万/月 2/5｜消费电子 #53 3/5",
-      "reason": "Govee 的2026万圣节灯光专题和节庆新品正在主推，距离万圣节约三周，消费者仍有安装和内容模仿时间。智能灯带、户外永久灯和场景联动可同时承接万圣节、秋季聚会及后续圣诞布置，建议重点做灯效演示和安装教程。",
+      "reason": "距离万圣节不足三周，Govee 的万圣节灯光专题与节庆场景仍处高转化窗口。智能灯带、户外永久灯和场景联动既能承接万圣节，也可延续到圣诞布置；建议重点做门廊灯效、派对场景和安装教程。",
       "source_url": "https://us.govee.com/pages/halloween-lights",
       "affiliate": "Adpump",
       "category": "家用电器和智能设备",
       "brand_key": "govee",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 4,
@@ -56,12 +56,12 @@
       "info_score": 87,
       "website_score": 4,
       "website_metric": "spirithalloween.com｜自然搜索季节性快速上升 3/5｜万圣节专营品类 1/5",
-      "reason": "10月进入万圣节服装、面具、家居装饰和派对用品的核心购买期，Spirit Halloween 的品类与节日需求高度重合。距离10月31日仍有完整配送窗口，建议优先覆盖热门角色服装、家庭组合装、店内新品和临近节日的购买时效提醒。",
+      "reason": "10月中旬进入万圣节服装、面具、家居装饰和派对用品的核心采购期，Spirit Halloween 与节日需求高度重合。配送时间开始变得关键，建议优先覆盖热门角色、家庭组合装、门店新品和明确的到货时效提醒。",
       "source_url": "https://www.spirithalloween.com/",
       "affiliate": "Partnermatic",
       "category": "集合折扣店",
       "brand_key": "spirit-halloween",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 5,
@@ -71,12 +71,12 @@
       "info_score": 86,
       "website_score": 4,
       "website_metric": "philips-hue.com｜自然搜索约97万/月 2/5｜家居其他 #178 2/5",
-      "reason": "Philips Hue 正在运行万圣节促销，购买两件及以上智能灯可享30%优惠，并明确覆盖电影夜、派对和秋季聚会。促销与节日临近同时出现，适合用场景套装提高客单价，重点推广家庭影院、门廊灯光和一键万圣节灯效。",
+      "reason": "Philips Hue 万圣节促销与节日倒计时同时出现，智能灯可覆盖电影夜、派对、门廊和秋季聚会。适合用多灯场景套装提升客单价，重点推广一键万圣节灯效、家庭影院和后续可复用的圣诞照明。",
       "source_url": "https://www.philips-hue.com/en-us/products/promotions/halloween",
       "affiliate": "TradeDoubler",
       "category": "家用电器和智能设备",
       "brand_key": "philips-hue",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 6,
@@ -86,12 +86,12 @@
       "info_score": 87,
       "website_score": 2,
       "website_metric": "milanoo.com｜自然搜索公开数据有限 1/5｜服装垂直品类 1/5",
-      "reason": "Milanoo 的2026万圣节专区已集中上线角色扮演、派对服装和配饰，并有明确折扣。服装需要预留选码和跨境配送时间，10月上旬是转化窗口。建议按热门影视角色、情侣及家庭套装拆分内容，并突出尺码、到货时间和退换政策。",
+      "reason": "万圣节服装已进入选码与跨境配送的最后高价值窗口，Milanoo 的角色扮演、派对服装和配饰覆盖完整。建议按热门影视角色、情侣及家庭套装拆分内容，并醒目标注尺码、预计到货和退换政策。",
       "source_url": "https://www.milanoo.com/Buy-Halloween-Costumes-c395",
       "affiliate": "WebgainsY",
       "category": "时尚服饰",
       "brand_key": "milanoo",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 7,
@@ -101,12 +101,12 @@
       "info_score": 82,
       "website_score": 6,
       "website_metric": "shein.com｜自然搜索规模高 3/5｜全球时尚电商品类头部 3/5",
-      "reason": "10月上旬同时进入秋季换装和万圣节服装采购期，SHEIN 可用高SKU和低价格覆盖派对装扮、秋季针织及配饰。Prime Day 周期也会抬高全网价格比较需求。建议主推低预算万圣节造型、秋季胶囊衣橱和快速到货商品。",
+      "reason": "10月中旬同时承接秋季换装与万圣节造型需求，SHEIN 可凭高 SKU 和价格优势覆盖派对装扮、针织、外套及配饰。建议主推低预算整套造型、秋季胶囊衣橱和明确标注快速到货的商品。",
       "source_url": "https://www.shein.com/campaign/halloween",
       "affiliate": "InvolveAsia-Y",
       "category": "时尚服饰",
       "brand_key": "shein",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 8,
@@ -116,12 +116,12 @@
       "info_score": 82,
       "website_score": 6,
       "website_metric": "aliexpress.com｜自然搜索规模高 3/5｜全球 Marketplace 头部 3/5",
-      "reason": "Prime Big Deal Days 于10月6日至7日举行，带动消费者集中比较电子、家居和节庆用品价格；AliExpress 同时处于双11预热前段。建议利用价格敏感流量推广智能设备、万圣节装饰和小家电，并提前积累双11愿望清单内容。",
+      "reason": "万圣节采购进入配送倒计时，双11也已进入前期蓄水阶段。AliExpress 适合承接价格敏感型智能设备、节庆装饰和小家电需求；本周建议做可及时到货商品筛选，并提前积累双11愿望清单和价格追踪内容。",
       "source_url": "https://www.aliexpress.com/",
       "affiliate": "TradeDoubler",
       "category": "集合折扣店",
       "brand_key": "aliexpress",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 9,
@@ -131,12 +131,12 @@
       "info_score": 81,
       "website_score": 6,
       "website_metric": "charlottetilbury.com｜自然搜索约77万/月 2/5｜美妆品类 #23 4/5",
-      "reason": "2026美妆圣诞日历已上线，包含15件产品及4件正装；Amazon 秋季大促又强化了高端美妆礼盒的比价需求。新品礼盒、节日预热和促销季三项信号叠加，建议制作开箱、单品价值拆解以及与其他高端美妆日历的横评。",
+      "reason": "2026美妆圣诞日历已上线，万圣节妆容与年末礼盒预热形成双重内容窗口。建议制作节日妆容、日历开箱、单品价值拆解及高端美妆礼盒横评，以新品与礼赠场景拉动转化。",
       "source_url": "https://www.charlottetilbury.com/us/product/beauty-advent-calendar",
       "affiliate": "Partnerize",
       "category": "美妆日化",
       "brand_key": "charlotte-tilbury",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 10,
@@ -146,12 +146,12 @@
       "info_score": 80,
       "website_score": 7,
       "website_metric": "dyson.com｜自然搜索约113万/月 3/5｜消费电子 #25 4/5",
-      "reason": "Walmart Fall Deals 与 Prime Big Deal Days 同期推动吸尘器、空气净化和个护电器进入集中比价期，Dyson 又有机器人清洁新品可承接关注。建议围绕扫地机器人、无线吸尘器和吹风机做跨平台价格对比，并突出高端家电换新场景。",
+      "reason": "秋季家居清洁、过敏季空气管理和年末家电换新需求开始叠加，Dyson 的吸尘器、空气净化及个护电器具备高客单比价价值。建议围绕不同家庭场景做型号对比、价格追踪，并提前布局黑五购买指南。",
       "source_url": "https://www.dyson.com/deals",
       "affiliate": "Rakuten",
       "category": "家用电器和智能设备",
       "brand_key": "dyson",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 11,
@@ -161,12 +161,12 @@
       "info_score": 76,
       "website_score": 10,
       "website_metric": "lenovo.com｜自然搜索约1,807万/月 5/5｜电脑硬件 #5 5/5",
-      "reason": "Prime Big Deal Days 和 Walmart Fall Deals 正在集中释放笔记本及平板需求，Lenovo 近期的 AI PC 新品组合可承接办公、学生和年末换机。尽管新品已非本周首发，官网承接能力很强，建议重点做AI PC选购、商务本与学生本对比及大促价格追踪。",
+      "reason": "年末换机与黑五内容已进入研究期，AI PC、新款商务本和学生设备开始积累搜索需求。Lenovo 官网承接能力强，本周适合发布AI PC选购、商务本与学生本对比以及大促前价格基线，方便后续判断真实折扣。",
       "source_url": "https://www.lenovo.com/us/en/d/deals/",
       "affiliate": "Flexoffers",
       "category": "家用电器和智能设备",
       "brand_key": "lenovo",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 12,
@@ -176,12 +176,12 @@
       "info_score": 77,
       "website_score": 9,
       "website_metric": "hoka.com｜自然搜索约426万/月 4/5｜跑步品类 #1 5/5",
-      "reason": "秋季马拉松进入核心比赛期，Chicago Marathon 临近，跑者正处于比赛鞋、恢复鞋和赛前装备的最后采购窗口。HOKA 在跑步品类排名领先，官网承接力强。建议推广比赛日鞋款、长距离训练鞋、恢复拖鞋及不同配速人群选鞋。",
+      "reason": "秋季路跑与马拉松赛季仍在持续，赛事后的恢复需求和后续比赛备战同时存在。HOKA 在跑步品类排名领先，建议推广长距离训练鞋、恢复鞋、恢复拖鞋及不同配速和足型的选鞋指南。",
       "source_url": "https://www.hoka.com/en/us/marathon-gear-shop/",
       "affiliate": "Rakuten",
       "category": "运动健康",
       "brand_key": "hoka",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 13,
@@ -191,12 +191,12 @@
       "info_score": 80,
       "website_score": 5,
       "website_metric": "roborock.com｜自然搜索约143万/月 3/5｜科技其他 #476 2/5",
-      "reason": "秋季平台大促正在带动扫地机器人和洗地设备集中比价，Roborock 的多产品清洁生态适合用横评和组合场景承接流量。进入年末家居清洁与礼赠预热期，建议制作不同预算扫拖一体机对比、宠物家庭清洁方案和价格追踪。",
+      "reason": "秋季家居清洁与年末大促研究期已经重叠，扫拖机器人和洗地设备进入集中比较阶段。Roborock 的多产品生态适合做不同预算横评、宠物家庭清洁方案和黑五前价格基线。",
       "source_url": "https://global.roborock.com/pages/deals",
       "affiliate": "WebgainsY",
       "category": "家用电器和智能设备",
       "brand_key": "roborock",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 14,
@@ -206,12 +206,12 @@
       "info_score": 80,
       "website_score": 5,
       "website_metric": "traveloka.com｜自然搜索占比未公开 0/5｜航空出行品类 #1 5/5",
-      "reason": "10月1日至7日黄金周带来中国出境游及亚洲区域短途旅行需求，本周后段仍有返程、延住和当地玩乐订单。Traveloka 可同时承接机票、酒店和体验预订。建议聚焦泰国、日韩及东南亚目的地，并补充返程机票和临期酒店内容。",
+      "reason": "黄金周结束后，亚洲秋季短途游与圣诞、新年早订需求开始接力。Traveloka 可同时承接机票、酒店和当地体验；建议聚焦泰国、日韩及东南亚周末游，并提前布局年末假期组合预订。",
       "source_url": "https://www.traveloka.com/",
       "affiliate": "InvolveAsia-Y",
       "category": "旅游出行",
       "brand_key": "traveloka",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 15,
@@ -221,12 +221,12 @@
       "info_score": 80,
       "website_score": 4,
       "website_metric": "agoda.com｜自然搜索规模高 3/5｜公开品类排名未计分 1/5",
-      "reason": "黄金周、秋季短途旅行和年末假期预订开始重叠，酒店用户会同时搜索临期住宿和后续圣诞、新年行程。Agoda 在亚洲住宿场景覆盖广，适合承接多目的地比较。建议发布黄金周返程延住、秋季城市游和年末早订酒店清单。",
+      "reason": "秋季城市短途游与圣诞、新年酒店早订开始重叠，用户会同时搜索临期住宿和年末行程。Agoda 在亚洲住宿覆盖广，适合发布秋季城市游、周末住宿及年末早订酒店清单。",
       "source_url": "https://www.agoda.com/deals",
       "affiliate": "Blueaff",
       "category": "旅游出行",
       "brand_key": "agoda",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 16,
@@ -236,12 +236,12 @@
       "info_score": 79,
       "website_score": 5,
       "website_metric": "iherb.com｜自然搜索规模高 3/5｜健康零售品类 2/5",
-      "reason": "秋季换季、流感季准备和马拉松赛季同时提升维生素、免疫支持、蛋白粉及运动补剂需求。平台大促周也会强化囤货心理。建议围绕换季营养、跑者恢复和家庭常备补剂制作场景化清单，并明确适用人群和产品规格。",
+      "reason": "秋季换季、流感季准备和马拉松恢复需求同时提升维生素、免疫支持、蛋白粉及运动补剂关注。建议围绕换季营养、跑者恢复和家庭常备补剂制作场景化清单，并明确适用人群与规格。",
       "source_url": "https://www.iherb.com/specials",
       "affiliate": "Partnerize",
       "category": "运动健康",
       "brand_key": "iherb",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 17,
@@ -251,12 +251,12 @@
       "info_score": 81,
       "website_score": 2,
       "website_metric": "airpaz.com｜自然搜索占比未公开 0/5｜航空出行品类 #143 2/5",
-      "reason": "黄金周末段仍存在返程和临期改签需求，欧洲 Oktoberfest 收官也带来跨境返程场景。Airpaz 适合覆盖价格敏感型航班搜索。建议制作亚洲区域返程机票、欧洲返程航线和最后一分钟价格比较，同时提示行李与改签规则。",
+      "reason": "黄金周后亚洲区域航线仍有返程与错峰出游需求，圣诞和新年机票也进入提前搜索期。Airpaz 适合覆盖价格敏感型航班比较，建议制作错峰短途航线、年末早订和行李规则对比。",
       "source_url": "https://www.airpaz.com/en/deals",
       "affiliate": "InvolveAsia-Y",
       "category": "旅游出行",
       "brand_key": "airpaz",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 18,
@@ -266,12 +266,12 @@
       "info_score": 75,
       "website_score": 8,
       "website_metric": "stanley1913.com｜自然搜索约237万/月 4/5｜运动生活品类 #47 4/5",
-      "reason": "秋季限定色、咖啡通勤和户外保温场景仍处需求上升期，同时年末礼赠内容已开始预热。Stanley 官网流量基础较强，但因近期连续推荐已执行降权。建议把重点放在秋季色系、咖啡杯型比较和低门槛礼物清单。",
+      "reason": "秋季通勤、咖啡和户外保温场景持续升温，年末礼赠内容也已开始预热。Stanley 官网流量基础较强；建议聚焦秋季色系、杯型比较、通勤保温和低门槛礼物清单。",
       "source_url": "https://www.stanley1913.com/collections/fall-drinkware-collection",
       "affiliate": "Flexoffers",
       "category": "家居生活",
       "brand_key": "stanley",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 19,
@@ -281,12 +281,12 @@
       "info_score": 82,
       "website_score": 0,
       "website_metric": "honeystinger.com｜公开自然搜索与可靠品类排名暂不可用 0/10",
-      "reason": "Chicago Marathon 临近，能量胶、咀嚼块和华夫饼正处于赛前测试及比赛补给的最后采购窗口。赛事相关性强，但官网公开流量数据不足且近期已有推荐，因此总分受控。建议制作比赛日补给时间表、不同赛程用量和肠胃适应建议。",
+      "reason": "秋季路跑赛季仍在进行，赛后恢复与下一场比赛训练同时带动能量胶、咀嚼块和华夫饼需求。建议制作长距离训练及比赛日补给时间表、不同赛程用量和肠胃适应内容。",
       "source_url": "https://honeystinger.com/collections/energy-chews-for-running",
       "affiliate": "Partnermatic",
       "category": "食品饮品",
       "brand_key": "honey-stinger",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     },
     {
       "rank": 20,
@@ -296,13 +296,12 @@
       "info_score": 79,
       "website_score": 1,
       "website_metric": "kaethe-wohlfahrt.com｜自然搜索约0.9万/月 1/5｜公开品类排名不可用 0/5",
-      "reason": "2026年度圣诞系列和限量收藏品已上线，10月进入跨境圣诞装饰的提前采购期。产品具有收藏和礼赠属性，且国际配送周期较长，适合提前布局；但网站规模较小且近期连续推荐已降权。建议推广年度限量款和德国传统圣诞装饰。",
+      "reason": "2026年度圣诞系列和限量收藏品已上线，10月中旬进入跨境圣诞装饰的提前采购期。国际配送周期较长，本周适合推广年度限量款、德国传统装饰和收藏型礼赠。",
       "source_url": "https://www.kaethe-wohlfahrt.com/en/deco/table-decorations/annual-christmas-edition-mug-2026",
       "affiliate": "Partnermatic",
       "category": "集合折扣店",
       "brand_key": "kathe-wohlfahrt",
-      "evidence_date": "2026-10-08"
+      "evidence_date": "2026-10-12"
     }
   ]
 }
-
